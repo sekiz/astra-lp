@@ -129,23 +129,69 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| PAGE-01–08 | Phase 1 + 2 | Pending |
-| HERO-01–05 | Phase 2 | Pending |
-| FEAT-01–06 | Phase 2 | Pending |
-| WHY-01–03 | Phase 2 | Pending |
-| CTA-01–02 | Phase 2 | Pending |
-| AUTH-01–08 | Phase 3 | Pending |
-| SURV-01–10 | Phase 4 | Pending |
-| LEAD-01–04 | Phase 5 | Pending |
-| I18N-01–05 | Phase 1 + 2 | Pending |
-| SEO-01–03 | Phase 1 | Pending |
-| COMP-01–03 | Phase 4 | Pending |
+| PAGE-01 | Phase 1 | Pending |
+| PAGE-02 | Phase 2 | Pending |
+| PAGE-03 | Phase 2 | Pending |
+| PAGE-04 | Phase 2 | Pending |
+| PAGE-05 | Phase 2 | Pending |
+| PAGE-06 | Phase 2 | Pending |
+| PAGE-07 | Phase 4 | Pending |
+| PAGE-08 | Phase 2 | Pending |
+| HERO-01 | Phase 2 | Pending |
+| HERO-02 | Phase 2 | Pending |
+| HERO-03 | Phase 2 | Pending |
+| HERO-04 | Phase 2 | Pending |
+| HERO-05 | Phase 2 | Pending |
+| FEAT-01 | Phase 2 | Pending |
+| FEAT-02 | Phase 2 | Pending |
+| FEAT-03 | Phase 2 | Pending |
+| FEAT-04 | Phase 2 | Pending |
+| FEAT-05 | Phase 2 | Pending |
+| FEAT-06 | Phase 2 | Pending |
+| WHY-01 | Phase 2 | Pending |
+| WHY-02 | Phase 2 | Pending |
+| WHY-03 | Phase 2 | Pending |
+| CTA-01 | Phase 2 | Pending |
+| CTA-02 | Phase 2 | Pending |
+| AUTH-01 | Phase 3 | Pending |
+| AUTH-02 | Phase 3 | Pending |
+| AUTH-03 | Phase 3 | Pending |
+| AUTH-04 | Phase 3 | Pending |
+| AUTH-05 | Phase 3 | Pending |
+| AUTH-06 | Phase 3 | Pending |
+| AUTH-07 | Phase 3 | Pending |
+| AUTH-08 | Phase 3 | Pending |
+| SURV-01 | Phase 3 | Pending |
+| SURV-02 | Phase 3 | Pending |
+| SURV-03 | Phase 3 | Pending |
+| SURV-04 | Phase 3 | Pending |
+| SURV-05 | Phase 3 | Pending |
+| SURV-06 | Phase 3 | Pending |
+| SURV-07 | Phase 3 | Pending |
+| SURV-08 | Phase 3 | Pending |
+| SURV-09 | Phase 3 | Pending |
+| SURV-10 | Phase 3 | Pending |
+| LEAD-01 | Phase 4 | Pending |
+| LEAD-02 | Phase 4 | Pending |
+| LEAD-03 | Phase 4 | Pending |
+| LEAD-04 | Phase 4 | Pending |
+| I18N-01 | Phase 1 | Pending |
+| I18N-02 | Phase 1 | Pending |
+| I18N-03 | Phase 1 | Pending |
+| I18N-04 | Phase 1 | Pending |
+| I18N-05 | Phase 1 | Pending |
+| SEO-01 | Phase 1 | Pending |
+| SEO-02 | Phase 1 | Pending |
+| SEO-03 | Phase 1 | Pending |
+| COMP-01 | Phase 1 | Pending |
+| COMP-02 | Phase 3 | Pending |
+| COMP-03 | Phase 3 | Pending |
 
 **Coverage:**
-- v1 requirements: 52 total
-- Mapped to phases: 52
-- Unmapped: 0 ✓
+- v1 requirements: 57 total
+- Mapped to phases: 57
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-19*
-*Last updated: 2026-03-19 after initial definition*
+*Last updated: 2026-03-19 — traceability updated after roadmap creation*
