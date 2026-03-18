@@ -29,7 +29,14 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Page `<head>` contains correct `<title>`, `<meta description>`, Open Graph tags, and `hreflang` alternates for both locales
   4. `robots.txt` and `sitemap.xml` are reachable and valid
   5. `/privacy` page loads with a minimal privacy policy covering data collected
-**Plans**: TBD
+**Plans**: 5 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Wave 0: Install Playwright + Vitest, create test stubs for all Phase 1 requirements
+- [ ] 01-02-PLAN.md — Wave 1: Next.js 15 scaffold, Tailwind v4 PostCSS pipeline, next-intl install, dark theme globals
+- [ ] 01-03-PLAN.md — Wave 2: next-intl routing config, middleware, request config, dictionary schema, root layout with metadata
+- [ ] 01-04-PLAN.md — Wave 3: robots.ts, sitemap.ts, privacy page, LanguageSwitcher component wired into layout
+- [ ] 01-05-PLAN.md — Wave 4: Vercel project creation and environment variable configuration (checkpoint)
 
 ### Phase 2: Static Page
 **Goal**: A fully styled, responsive landing page with all content sections rendered and bilingual copy in place — visitors can read the full value proposition, understand the features, and see the scarcity framing; the waitlist CTA button is visible but not yet wired to OAuth
@@ -73,7 +80,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/TBD | Not started | - |
+| 1. Foundation | 0/5 | Not started | - |
 | 2. Static Page | 0/TBD | Not started | - |
 | 3. Conversion Flow | 0/TBD | Not started | - |
 | 4. Lead Storage & Launch | 0/TBD | Not started | - |
