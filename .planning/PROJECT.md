@@ -21,7 +21,7 @@ Get the first 100 technically credible early adopters onto the waitlist — peop
 - [ ] Features section — 3-column grid: Linux kernel foundation, Open Source philosophy, Agent Orchestration
 - [ ] "Why Astra OS?" section — positions against legacy OS incumbents, explains kernel-level AI integration
 - [ ] Final CTA section — reinforces scarcity, second waitlist signup form
-- [ ] LinkedIn OAuth sign-in to pre-fill name/email, followed by 4 short qualifying questions
+- [ ] Manual waitlist form (name, last name, email + 4 qualifying questions) — LinkedIn OAuth deferred to v2
 - [ ] Bilingual content — English primary, Turkish secondary
 - [ ] Qualifying form questions: Role/Sector, AI agent usage, Finance interest, Motivation
 
@@ -58,7 +58,7 @@ Get the first 100 technically credible early adopters onto the waitlist — peop
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| LinkedIn OAuth over plain email | Lower friction + richer profile data without manual input | — Pending |
+| Manual form for v1, LinkedIn OAuth for v2 | Ship faster with fewer dependencies; OAuth adds complexity and portal approval delay | — Decided |
 | Copywriting-only scarcity (no counter) | Minimalist aesthetic fits "Apple polish" tone; counters feel aggressive | — Pending |
 | Bilingual EN + TR | Reach Turkish technical community alongside global audience | — Pending |
 | 4 qualifying questions | Balance between data richness and conversion rate | — Pending |

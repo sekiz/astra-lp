@@ -39,29 +39,20 @@
 - [ ] **WHY-02**: Section explains Astra's kernel-level AI integration as the differentiated solution
 - [ ] **WHY-03**: Copy is intellectually honest and specific (references kernel-level agent scheduling, not vague claims)
 
-### Waitlist & LinkedIn OAuth Flow
+### Waitlist Form (Manual)
 
-- [ ] **AUTH-01**: CTA button initiates LinkedIn OAuth (OpenID Connect) flow
-- [ ] **AUTH-02**: OAuth flow requests only `openid profile email` scopes
-- [ ] **AUTH-03**: A GDPR/KVKK consent checkbox + privacy policy link is shown before the OAuth redirect fires
-- [ ] **AUTH-04**: LinkedIn authorization code is exchanged server-side (Route Handler only — never client-side)
-- [ ] **AUTH-05**: OAuth callback pre-fills name, surname, and email into a signed httpOnly session cookie
-- [ ] **AUTH-06**: OAuth state/CSRF parameter is generated and verified to prevent CSRF attacks
-- [ ] **AUTH-07**: Error handling exists for expired authorization codes and user-cancelled auth
-- [ ] **AUTH-08**: A fallback email-only signup form is available if LinkedIn OAuth is declined or unavailable
-
-### Qualifying Survey (Post-Auth)
-
-- [ ] **SURV-01**: Qualifying survey is shown only after successful LinkedIn OAuth — never before
-- [ ] **SURV-02**: Survey pre-fills name/surname/email from the OAuth session cookie
-- [ ] **SURV-03**: Survey contains exactly 4 questions (radio/single-select; answerable in under 60 seconds)
-- [ ] **SURV-04**: Question 1 — "What best describes you?" (Developer / Founder / AI Researcher / Product Manager / Other)
-- [ ] **SURV-05**: Question 2 — "Do you currently orchestrate AI agents?" (Yes / No / Exploring)
-- [ ] **SURV-06**: Question 3 — "Are you interested in AI for finance or trading?" (Yes / No / Maybe)
-- [ ] **SURV-07**: Question 4 — "What excites you most about Astra OS?" (3 options: Kernel-level AI / Open Source freedom / Agent Orchestration power)
-- [ ] **SURV-08**: Survey shows a step progress indicator ("Step 2 of 4")
-- [ ] **SURV-09**: Survey submission POSTs all fields to the waitlist Route Handler
-- [ ] **SURV-10**: Post-submit success screen displays confirmation copy + "what happens next" message
+- [ ] **FORM-01**: CTA button opens a waitlist modal with a manual signup form
+- [ ] **FORM-02**: Form collects: first name, last name, email (required fields)
+- [ ] **FORM-03**: Form collects 4 qualifying questions (radio/single-select; answerable in under 60 seconds)
+- [ ] **FORM-04**: Question 1 — "What best describes you?" (Developer / Founder / AI Researcher / Product Manager / Other)
+- [ ] **FORM-05**: Question 2 — "Do you currently orchestrate AI agents?" (Yes / No / Exploring)
+- [ ] **FORM-06**: Question 3 — "Are you interested in AI for finance or trading?" (Yes / No / Maybe)
+- [ ] **FORM-07**: Question 4 — "What excites you most about Astra OS?" (3 options: Kernel-level AI / Open Source freedom / Agent Orchestration power)
+- [ ] **FORM-08**: Form shows a step progress indicator (Step 1: identity, Step 2: questions)
+- [ ] **FORM-09**: A GDPR/KVKK consent checkbox + privacy policy link is shown before submission
+- [ ] **FORM-10**: Form submission POSTs all fields to the waitlist Route Handler
+- [ ] **FORM-11**: Post-submit success screen displays confirmation copy + "what happens next" message
+- [ ] **FORM-12**: Client-side validation with clear inline error messages (empty fields, invalid email format)
 
 ### Lead Storage
 
@@ -73,7 +64,7 @@
 ### Final CTA Section
 
 - [ ] **CTA-01**: Final section repeats the scarcity framing with fresh copy (not a verbatim repeat of hero)
-- [ ] **CTA-02**: Section contains a second waitlist CTA button that opens the same OAuth flow
+- [ ] **CTA-02**: Section contains a second waitlist CTA button that opens the same waitlist modal
 
 ### Bilingual (EN + TR)
 
@@ -87,15 +78,25 @@
 
 - [ ] **SEO-01**: Page has `<title>`, `<meta description>`, and Open Graph tags configured for both locales
 - [ ] **SEO-02**: `robots.txt` and `sitemap.xml` are present and correct
-- [ ] **SEO-03**: LinkedIn Developer Portal app is configured with all environment redirect URIs (local, staging, production)
+- [ ] **SEO-03**: Vercel project is configured with local, preview, and production environments before Phase 3
 
 ### Compliance
 
 - [ ] **COMP-01**: A `/privacy` page exists at launch with a minimal privacy policy covering data collected
-- [ ] **COMP-02**: GDPR/KVKK consent is captured via checkbox before any data collection begins
+- [ ] **COMP-02**: GDPR/KVKK consent checkbox is shown inside the waitlist form before submission
 - [ ] **COMP-03**: Cookie usage notice is present (minimal bottom-bar style — not a full-page takeover)
 
 ## v2 Requirements
+
+### LinkedIn OAuth (Deferred from v1)
+
+- **AUTH-01**: CTA button initiates LinkedIn OAuth (OpenID Connect) flow replacing manual form
+- **AUTH-02**: OAuth flow requests only `openid profile email` scopes
+- **AUTH-03**: LinkedIn authorization code is exchanged server-side (Route Handler only)
+- **AUTH-04**: OAuth callback pre-fills name, surname, and email into the qualifying survey
+- **AUTH-05**: OAuth state/CSRF parameter is generated and verified
+- **AUTH-06**: Error handling for expired codes and user-cancelled auth
+- **AUTH-07**: Fallback to manual form if OAuth unavailable
 
 ### Social Proof
 
@@ -116,6 +117,7 @@
 
 | Feature | Reason |
 |---------|--------|
+| LinkedIn OAuth (v1) | Deferred to v2 — reduces Day 1 dependencies; manual form ships faster |
 | Live waitlist counter / countdown timer | Fake counters destroy developer trust; copy-only scarcity is deliberate choice |
 | Social sharing / referral loop | Conflicts with "exclusive first 100" framing; post-launch feature |
 | Pricing section | Premature — no pricing model validated yet |
@@ -153,24 +155,18 @@
 | WHY-03 | Phase 2 | Pending |
 | CTA-01 | Phase 2 | Pending |
 | CTA-02 | Phase 2 | Pending |
-| AUTH-01 | Phase 3 | Pending |
-| AUTH-02 | Phase 3 | Pending |
-| AUTH-03 | Phase 3 | Pending |
-| AUTH-04 | Phase 3 | Pending |
-| AUTH-05 | Phase 3 | Pending |
-| AUTH-06 | Phase 3 | Pending |
-| AUTH-07 | Phase 3 | Pending |
-| AUTH-08 | Phase 3 | Pending |
-| SURV-01 | Phase 3 | Pending |
-| SURV-02 | Phase 3 | Pending |
-| SURV-03 | Phase 3 | Pending |
-| SURV-04 | Phase 3 | Pending |
-| SURV-05 | Phase 3 | Pending |
-| SURV-06 | Phase 3 | Pending |
-| SURV-07 | Phase 3 | Pending |
-| SURV-08 | Phase 3 | Pending |
-| SURV-09 | Phase 3 | Pending |
-| SURV-10 | Phase 3 | Pending |
+| FORM-01 | Phase 3 | Pending |
+| FORM-02 | Phase 3 | Pending |
+| FORM-03 | Phase 3 | Pending |
+| FORM-04 | Phase 3 | Pending |
+| FORM-05 | Phase 3 | Pending |
+| FORM-06 | Phase 3 | Pending |
+| FORM-07 | Phase 3 | Pending |
+| FORM-08 | Phase 3 | Pending |
+| FORM-09 | Phase 3 | Pending |
+| FORM-10 | Phase 3 | Pending |
+| FORM-11 | Phase 3 | Pending |
+| FORM-12 | Phase 3 | Pending |
 | LEAD-01 | Phase 4 | Pending |
 | LEAD-02 | Phase 4 | Pending |
 | LEAD-03 | Phase 4 | Pending |
@@ -188,8 +184,8 @@
 | COMP-03 | Phase 3 | Pending |
 
 **Coverage:**
-- v1 requirements: 57 total
-- Mapped to phases: 57
+- v1 requirements: 51 total (AUTH-01–08 and SURV-01–10 moved to v2; replaced by FORM-01–12)
+- Mapped to phases: 51
 - Unmapped: 0
 
 ---

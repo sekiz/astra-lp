@@ -37,7 +37,7 @@ Project scaffold, i18n routing infrastructure, SEO metadata, `robots.txt`, `site
 
 - Tone from PROJECT.md: "Apple polish, Linux freedom" — even the privacy page should feel considered, not a generic legal dump
 - Turkish locale is equal-first-class from day one — not bolted on after; this is enforced by requiring all strings in `dictionaries/tr.json` from Phase 1 structure onward
-- LinkedIn Developer Portal app registration must happen on Day 1 of this phase (outside code) — approval takes 1-3 business days and blocks Phase 3
+- LinkedIn OAuth is deferred to v2 — no Developer Portal registration needed for v1
 
 </specifics>
 

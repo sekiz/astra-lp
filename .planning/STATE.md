@@ -58,7 +58,7 @@ Progress: [░░░░░░░░░░] 0%
 Decisions are logged in PROJECT.md Key Decisions table.
 Recent decisions affecting current work:
 
-- [Init]: LinkedIn OAuth over plain email — lower friction + richer profile data
+- [Revised]: Manual form for v1 — LinkedIn OAuth deferred to v2 (faster launch, no portal approval dependency)
 - [Init]: Copywriting-only scarcity — minimalist aesthetic, no countdown timers
 - [Init]: Bilingual EN + TR — Turkish technical community reach
 - [Init]: 4 qualifying questions — balance data richness vs conversion rate
@@ -69,9 +69,8 @@ None yet.
 
 ### Blockers/Concerns
 
-- [Phase 3 pre-req]: LinkedIn Developer Portal app approval takes 1-3 business days — must apply on day 1, before Phase 3 begins
 - [Phase 4 pre-req]: Airtable SDK current package name has LOW confidence — verify with `npm search airtable` before Phase 4 planning
-- [Phase 3 pre-req]: Auth.js v5 beta stability — confirm whether stable release is out; if still beta, evaluate v4 fallback before Phase 3
+- [v2]: LinkedIn OAuth deferred — no blockers for v1 phases
 
 ## Session Continuity
 
