@@ -1,0 +1,55 @@
+{
+  "Metadata": {
+    "title": "Astra OS — Yapay Zeka İşletim Sistemi | Kapalı Beta'ya Katıl",
+    "description": "Çekirdek seviyesinde yapay zeka entegrasyonuna sahip Linux tabanlı işletim sistemi. İlk 100 geliştirici platformu şekillendiriyor."
+  },
+  "Nav": {
+    "switchLanguage": "EN",
+    "switchLanguageLabel": "Türkçe'ye geç",
+    "switchLanguageLabelAlt": "İngilizce'ye geç"
+  },
+  "Privacy": {
+    "title": "Gizlilik Politikası",
+    "intro": "Astra OS, yalnızca bekleme listesi kaydı sırasında gönüllü olarak sağladığınız verileri toplar. Verilerinizi üçüncü taraflarla satmaz, kiralamaz veya paylaşmayız.",
+    "dataCollectedTitle": "Topladığımız Veriler",
+    "dataCollectedItems": "Ad, soyad ve e-posta adresi (zorunlu)\n4 yeterlilik sorusunun yanıtları (rol, yapay zeka ajan kullanımı, ilgi alanları, motivasyon)\nTarayıcı dili ve yönlendirme kaynağı (yalnızca analitik amaçlı, kimliğinizle ilişkilendirilmez)",
+    "retentionTitle": "Veri Saklama",
+    "retentionBody": "Verileriniz kapalı beta süresi boyunca saklanır. Aşağıdaki e-posta adresine yazarak istediğiniz zaman silinmesini talep edebilirsiniz.",
+    "rightsTitle": "Haklarınız (GDPR / KVKK)",
+    "rightsBody": "Kişisel verilerinize erişme, düzeltme veya silme hakkına sahipsiniz. KVKK kapsamındaki haklarınız (Türkiye'de ikamet edenler için) Türk veri koruma mevzuatı çerçevesinde geçerlidir.",
+    "contactTitle": "İletişim",
+    "contactBody": "Gizlilikle ilgili talepleriniz için e-posta gönderin: privacy@astraos.com",
+    "lastUpdated": "Son güncelleme: Mart 2026"
+  },
+  "Hero": {
+    "headline": "",
+    "subheadline": "",
+    "scarcity": "",
+    "ctaButton": ""
+  },
+  "Features": {
+    "sectionTitle": "",
+    "card1Title": "",
+    "card1Body": "",
+    "card2Title": "",
+    "card2Body": "",
+    "card3Title": "",
+    "card3Body": ""
+  },
+  "WhyAstra": {
+    "sectionTitle": "",
+    "body": ""
+  },
+  "FinalCTA": {
+    "headline": "",
+    "scarcity": "",
+    "ctaButton": ""
+  },
+  "Footer": {
+    "privacyLink": "",
+    "switchLanguage": "",
+    "switchLanguageLabel": "",
+    "switchLanguageLabelAlt": "",
+    "copyright": ""
+  }
+}

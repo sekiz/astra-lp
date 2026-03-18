@@ -1,0 +1,55 @@
+{
+  "Metadata": {
+    "title": "Astra OS — AI Operating System | Join the Closed Beta",
+    "description": "Linux-based AI OS with kernel-level agent orchestration. First 100 developers shape the platform."
+  },
+  "Nav": {
+    "switchLanguage": "TR",
+    "switchLanguageLabel": "Switch to Turkish",
+    "switchLanguageLabelAlt": "Switch to English"
+  },
+  "Privacy": {
+    "title": "Privacy Policy",
+    "intro": "Astra OS collects only the data you voluntarily provide during waitlist signup. We do not sell, rent, or share your data with third parties.",
+    "dataCollectedTitle": "Data We Collect",
+    "dataCollectedItems": "First name, last name, and email address (required)\nAnswers to 4 qualifying questions (role, AI agent usage, interests, motivation)\nBrowser locale and referral source (analytics only, not linked to your identity)",
+    "retentionTitle": "Data Retention",
+    "retentionBody": "Your data is retained for the duration of the closed-beta period. You may request deletion at any time by emailing the address below.",
+    "rightsTitle": "Your Rights (GDPR / KVKK)",
+    "rightsBody": "You have the right to access, correct, or delete your personal data. For KVKK rights (Turkish residents), the same rights apply under Turkish data protection law.",
+    "contactTitle": "Contact",
+    "contactBody": "For any privacy-related requests, email: privacy@astraos.com",
+    "lastUpdated": "Last updated: March 2026"
+  },
+  "Hero": {
+    "headline": "",
+    "subheadline": "",
+    "scarcity": "",
+    "ctaButton": ""
+  },
+  "Features": {
+    "sectionTitle": "",
+    "card1Title": "",
+    "card1Body": "",
+    "card2Title": "",
+    "card2Body": "",
+    "card3Title": "",
+    "card3Body": ""
+  },
+  "WhyAstra": {
+    "sectionTitle": "",
+    "body": ""
+  },
+  "FinalCTA": {
+    "headline": "",
+    "scarcity": "",
+    "ctaButton": ""
+  },
+  "Footer": {
+    "privacyLink": "",
+    "switchLanguage": "",
+    "switchLanguageLabel": "",
+    "switchLanguageLabelAlt": "",
+    "copyright": ""
+  }
+}
