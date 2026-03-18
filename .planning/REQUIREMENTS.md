@@ -7,14 +7,14 @@
 
 ### Page Structure
 
-- [ ] **PAGE-01**: Page renders a full-screen Hero section as the first visible element
+- [x] **PAGE-01**: Page renders a full-screen Hero section as the first visible element
 - [ ] **PAGE-02**: Page renders a 3-column Features section below the hero
 - [ ] **PAGE-03**: Page renders a "Why Astra OS?" positioning section explaining the incumbent gap
 - [ ] **PAGE-04**: Page renders a Final CTA section with a second waitlist signup opportunity
 - [ ] **PAGE-05**: Page renders a minimal Footer with privacy policy link
 - [ ] **PAGE-06**: Page is fully responsive on mobile (320px+), tablet (768px+), and desktop (1280px+)
 - [ ] **PAGE-07**: Page achieves Lighthouse mobile score 90+ (LCP, CLS, TBT)
-- [ ] **PAGE-08**: Page uses a dark-theme visual system throughout
+- [x] **PAGE-08**: Page uses a dark-theme visual system throughout
 
 ### Hero Section
 
@@ -68,21 +68,21 @@
 
 ### Bilingual (EN + TR)
 
-- [ ] **I18N-01**: All user-facing copy is externalized into `dictionaries/en.json` and `dictionaries/tr.json`
-- [ ] **I18N-02**: A language switcher in the header/nav allows toggling between EN and TR
-- [ ] **I18N-03**: URL structure uses `[lang]` routing (`/en/`, `/tr/`) with middleware locale detection
-- [ ] **I18N-04**: `hreflang` alternate link tags are present in `<head>` for both locales
-- [ ] **I18N-05**: Turkish copy is native-quality (not machine-translated) — full parity with English content
+- [x] **I18N-01**: All user-facing copy is externalized into `dictionaries/en.json` and `dictionaries/tr.json`
+- [x] **I18N-02**: A language switcher in the header/nav allows toggling between EN and TR
+- [x] **I18N-03**: URL structure uses `[lang]` routing (`/en/`, `/tr/`) with middleware locale detection
+- [x] **I18N-04**: `hreflang` alternate link tags are present in `<head>` for both locales
+- [x] **I18N-05**: Turkish copy is native-quality (not machine-translated) — full parity with English content
 
 ### SEO & Infrastructure
 
-- [ ] **SEO-01**: Page has `<title>`, `<meta description>`, and Open Graph tags configured for both locales
-- [ ] **SEO-02**: `robots.txt` and `sitemap.xml` are present and correct
+- [x] **SEO-01**: Page has `<title>`, `<meta description>`, and Open Graph tags configured for both locales
+- [x] **SEO-02**: `robots.txt` and `sitemap.xml` are present and correct
 - [ ] **SEO-03**: Vercel project is configured with local, preview, and production environments before Phase 3
 
 ### Compliance
 
-- [ ] **COMP-01**: A `/privacy` page exists at launch with a minimal privacy policy covering data collected
+- [x] **COMP-01**: A `/privacy` page exists at launch with a minimal privacy policy covering data collected
 - [ ] **COMP-02**: GDPR/KVKK consent checkbox is shown inside the waitlist form before submission
 - [ ] **COMP-03**: Cookie usage notice is present (minimal bottom-bar style — not a full-page takeover)
 
@@ -131,14 +131,14 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| PAGE-01 | Phase 1 | Pending |
+| PAGE-01 | Phase 1 | Complete |
 | PAGE-02 | Phase 2 | Pending |
 | PAGE-03 | Phase 2 | Pending |
 | PAGE-04 | Phase 2 | Pending |
 | PAGE-05 | Phase 2 | Pending |
 | PAGE-06 | Phase 2 | Pending |
 | PAGE-07 | Phase 4 | Pending |
-| PAGE-08 | Phase 2 | Pending |
+| PAGE-08 | Phase 2 | Complete |
 | HERO-01 | Phase 2 | Pending |
 | HERO-02 | Phase 2 | Pending |
 | HERO-03 | Phase 2 | Pending |
@@ -171,15 +171,15 @@
 | LEAD-02 | Phase 4 | Pending |
 | LEAD-03 | Phase 4 | Pending |
 | LEAD-04 | Phase 4 | Pending |
-| I18N-01 | Phase 1 | Pending |
-| I18N-02 | Phase 1 | Pending |
-| I18N-03 | Phase 1 | Pending |
-| I18N-04 | Phase 1 | Pending |
-| I18N-05 | Phase 1 | Pending |
-| SEO-01 | Phase 1 | Pending |
-| SEO-02 | Phase 1 | Pending |
+| I18N-01 | Phase 1 | Complete |
+| I18N-02 | Phase 1 | Complete |
+| I18N-03 | Phase 1 | Complete |
+| I18N-04 | Phase 1 | Complete |
+| I18N-05 | Phase 1 | Complete |
+| SEO-01 | Phase 1 | Complete |
+| SEO-02 | Phase 1 | Complete |
 | SEO-03 | Phase 1 | Pending |
-| COMP-01 | Phase 1 | Pending |
+| COMP-01 | Phase 1 | Complete |
 | COMP-02 | Phase 3 | Pending |
 | COMP-03 | Phase 3 | Pending |
 

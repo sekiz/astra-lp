@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: planning
-stopped_at: Phase 1 context gathered
-last_updated: "2026-03-18T23:31:19.886Z"
-last_activity: 2026-03-19 — Roadmap created
+status: executing
+stopped_at: Completed 01-foundation-01-01-PLAN.md
+last_updated: "2026-03-18T23:55:16.093Z"
+last_activity: 2026-03-19 — Plan 01-01 complete (Wave 0 test infrastructure)
 progress:
   total_phases: 4
   completed_phases: 0
-  total_plans: 0
-  completed_plans: 0
-  percent: 0
+  total_plans: 5
+  completed_plans: 2
+  percent: 20
 ---
 
 # Project State
@@ -26,30 +26,31 @@ See: .planning/PROJECT.md (updated 2026-03-19)
 ## Current Position
 
 Phase: 1 of 4 (Foundation)
-Plan: 0 of TBD in current phase
-Status: Ready to plan
-Last activity: 2026-03-19 — Roadmap created
+Plan: 1 of 5 in current phase
+Status: In progress
+Last activity: 2026-03-19 — Plan 01-01 complete (Wave 0 test infrastructure)
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [██░░░░░░░░] 20%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 0
-- Average duration: -
-- Total execution time: -
+- Total plans completed: 1
+- Average duration: 3 min
+- Total execution time: 3 min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| - | - | - | - |
+| 01-foundation | 1/5 | 3 min | 3 min |
 
 **Recent Trend:**
-- Last 5 plans: -
+- Last 5 plans: 3 min
 - Trend: -
 
 *Updated after each plan completion*
+| Phase 01-foundation P02 | 3 | 2 tasks | 10 files |
 
 ## Accumulated Context
 
@@ -62,6 +63,9 @@ Recent decisions affecting current work:
 - [Init]: Copywriting-only scarcity — minimalist aesthetic, no countdown timers
 - [Init]: Bilingual EN + TR — Turkish technical community reach
 - [Init]: 4 qualifying questions — balance data richness vs conversion rate
+- [Phase 01-foundation]: testMatch: '**/*.spec.ts' added to playwright.config.ts to prevent Playwright from loading vitest .test.ts files in the same directory
+- [Phase 01-foundation]: Next.js 16.2.0 used (create-next-app@latest) instead of 15.x — App Router architecture identical, no downstream impact
+- [Phase 01-foundation]: i18n/request.ts stub created to unblock build — Plan 03 replaces with full routing config
 
 ### Pending Todos
 
@@ -74,6 +78,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-18T23:31:19.883Z
-Stopped at: Phase 1 context gathered
-Resume file: .planning/phases/01-foundation/01-CONTEXT.md
+Last session: 2026-03-18T23:54:32.201Z
+Stopped at: Completed 01-foundation-01-01-PLAN.md
+Resume file: None
