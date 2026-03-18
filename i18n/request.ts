@@ -1,9 +1,13 @@
 import { getRequestConfig } from 'next-intl/server'
+import { routing } from './routing'
 
-// Temporary stub — Plan 03 replaces this with full i18n routing configuration
-export default getRequestConfig(async () => {
+export default getRequestConfig(async ({ requestLocale }) => {
+  let locale = await requestLocale
+  if (!locale || !(routing.locales as readonly string[]).includes(locale)) {
+    locale = routing.defaultLocale
+  }
   return {
-    locale: 'en',
-    messages: {}
+    locale,
+    messages: (await import(`../dictionaries/${locale}.json`)).default,
   }
 })
