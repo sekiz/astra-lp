@@ -6,8 +6,8 @@ test('locale redirect: GET / redirects to /en or /tr @smoke', async ({ page }) =
   expect(response?.url()).toMatch(/\/(en|tr)(\/)?$/)
 })
 
-test('locale redirect: GET / with Accept-Language tr redirects to /tr @smoke', async ({ page, context }) => {
-  await context.setExtraHTTPHeaders({ 'Accept-Language': 'tr,en;q=0.5' })
+test('locale redirect: GET / with NEXT_LOCALE cookie tr redirects to /tr @smoke', async ({ page, context }) => {
+  await context.addCookies([{ name: 'NEXT_LOCALE', value: 'tr', domain: 'localhost', path: '/' }])
   const response = await page.goto('/')
   expect(response?.url()).toContain('/tr')
 })
