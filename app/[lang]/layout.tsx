@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { getTranslations, getMessages } from 'next-intl/server'
 import { NextIntlClientProvider } from 'next-intl'
+import { LanguageSwitcher } from '../../components/LanguageSwitcher'
 import '../globals.css'
 
 type Props = {
@@ -57,7 +58,17 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html lang={lang}>
       <body>
         <NextIntlClientProvider messages={messages} locale={lang}>
+          <header className="flex items-center justify-between px-6 py-4 border-b border-[var(--color-border)]">
+            <span className="text-sm font-medium tracking-wider">ASTRA OS</span>
+            <LanguageSwitcher />
+          </header>
+
           {children}
+
+          <footer className="flex items-center justify-between px-6 py-4 border-t border-[var(--color-border)] mt-auto">
+            <span className="text-xs text-[var(--color-text-muted)]">© 2026 Astra OS</span>
+            <LanguageSwitcher />
+          </footer>
         </NextIntlClientProvider>
       </body>
     </html>
