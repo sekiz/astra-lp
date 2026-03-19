@@ -22,34 +22,36 @@
     "lastUpdated": "Last updated: March 2026"
   },
   "Hero": {
-    "headline": "",
-    "subheadline": "",
-    "scarcity": "",
-    "ctaButton": ""
+    "headline": "Your OS doesn't know what an AI agent is. Astra does.",
+    "subheadline": "Astra OS is a Linux-based operating system with kernel-level AI agent orchestration — built for developers who are serious about what comes next.",
+    "scarcity": "Closed beta. Limited to the first 100.",
+    "ctaButton": "Get Early Access"
   },
   "Features": {
-    "sectionTitle": "",
-    "card1Title": "",
-    "card1Body": "",
-    "card2Title": "",
-    "card2Body": "",
-    "card3Title": "",
-    "card3Body": ""
+    "sectionTitle": "Built differently, from the ground up.",
+    "card1Title": "Linux Kernel Foundation",
+    "card1Body": "Built on a hardened Linux kernel — not a wrapper, not a compatibility layer. The same proven foundation that runs the world's most critical infrastructure, now optimized for AI workloads.",
+    "card2Title": "Open Source, Always",
+    "card2Body": "Every line of Astra OS that can be open will be. No black boxes, no lock-in. You can inspect the scheduler, audit the agent runtime, and fork whatever you need.",
+    "card3Title": "Kernel-Level Agent Orchestration",
+    "card3Body": "AI agent scheduling happens at the kernel, not in userspace middleware. Agents get real process isolation, direct hardware access, and first-class resource guarantees — not best-effort async glue."
   },
   "WhyAstra": {
-    "sectionTitle": "",
-    "body": ""
+    "sectionTitle": "Why not macOS or Ubuntu?",
+    "para1": "macOS is built for humans using applications. The kernel scheduler does not know what a language model is, and Apple's security model treats AI agents as just another process — one it can silently throttle, sandbox, or kill. The result: agents lose context, pipelines break, and you spend your afternoon diagnosing permission errors instead of shipping.",
+    "para2": "Ubuntu plus whatever AI framework is popular this month gets you further — but you are still duct-taping a general-purpose OS to a problem it was never designed for. Agent orchestration lives in Python libraries. Process isolation is an afterthought. Every agent run competes with your desktop environment for the same unmanaged thread pool.",
+    "para3": "Astra OS starts from a different question: what if the OS knew agents were the primary workload? Kernel-level scheduling priorities for agent processes. First-class inter-agent communication via IPC primitives, not HTTP. Resource quotas enforced at the scheduler, not the application layer. This is not a framework — it is the operating system itself."
   },
   "FinalCTA": {
-    "headline": "",
-    "scarcity": "",
-    "ctaButton": ""
+    "headline": "Ready to shape the future of AI infrastructure?",
+    "scarcity": "Seats fill fast. We're reviewing applications now.",
+    "ctaButton": "Join the Waitlist"
   },
   "Footer": {
-    "privacyLink": "",
-    "switchLanguage": "",
-    "switchLanguageLabel": "",
-    "switchLanguageLabelAlt": "",
-    "copyright": ""
+    "privacyLink": "Privacy Policy",
+    "switchLanguage": "TR",
+    "switchLanguageLabel": "Switch to Turkish",
+    "switchLanguageLabelAlt": "Switch to English",
+    "copyright": "© 2026 Astra OS. All rights reserved."
   }
 }

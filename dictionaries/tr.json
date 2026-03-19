@@ -22,34 +22,36 @@
     "lastUpdated": "Son güncelleme: Mart 2026"
   },
   "Hero": {
-    "headline": "",
-    "subheadline": "",
-    "scarcity": "",
-    "ctaButton": ""
+    "headline": "İşletim sisteminiz yapay zeka ajanının ne olduğunu bilmiyor. Astra biliyor.",
+    "subheadline": "Astra OS, çekirdek seviyesinde yapay zeka ajan orkestrasyonuna sahip Linux tabanlı bir işletim sistemi — yapay zekanın geleceğini ciddiye alan geliştiriciler için.",
+    "scarcity": "Kapalı beta. İlk 100 kullanıcıyla sınırlı.",
+    "ctaButton": "Erken Erişim Al"
   },
   "Features": {
-    "sectionTitle": "",
-    "card1Title": "",
-    "card1Body": "",
-    "card2Title": "",
-    "card2Body": "",
-    "card3Title": "",
-    "card3Body": ""
+    "sectionTitle": "Temelden farklı inşa edildi.",
+    "card1Title": "Linux Çekirdek Temeli",
+    "card1Body": "Güçlendirilmiş bir Linux çekirdeği üzerine kurulu — katman değil, uyumluluk köprüsü değil. Dünyanın en kritik altyapısını çalıştıran kanıtlanmış temel, artık yapay zeka iş yükleri için optimize edildi.",
+    "card2Title": "Her Zaman Açık Kaynak",
+    "card2Body": "Astra OS'un açılabilecek her satırı açık olacak. Kara kutu yok, bağımlılık yok. Zamanlayıcıyı inceleyebilir, ajan çalışma ortamını denetleyebilir ve ihtiyaç duyduğunuz her şeyi fork edebilirsiniz.",
+    "card3Title": "Çekirdek Seviyesinde Ajan Orkestrasyonu",
+    "card3Body": "Yapay zeka ajan zamanlaması, userspace ara katmanında değil çekirdekte gerçekleşir. Ajanlar gerçek süreç izolasyonu, doğrudan donanım erişimi ve birinci sınıf kaynak garantileri alır — belirsiz async bant bezi değil."
   },
   "WhyAstra": {
-    "sectionTitle": "",
-    "body": ""
+    "sectionTitle": "Neden macOS veya Ubuntu değil?",
+    "para1": "macOS, uygulama kullanan insanlar için tasarlandı. Çekirdek zamanlayıcısı bir dil modelinin ne olduğunu bilmiyor; Apple'ın güvenlik modeli yapay zeka ajanlarına sıradan bir süreç gibi davranıyor — sessizce kısıtlanabilir, sandbox'a alınabilir ya da sonlandırılabilir. Sonuç: ajanlar bağlamını kaybediyor, pipeline'lar bozuluyor, siz de öğleden sonranızı sevkiyat yapmak yerine izin hatalarını ayıklamakla geçiriyorsunuz.",
+    "para2": "Ubuntu artı popüler yapay zeka framework'ü sizi daha ileriye taşıyor — ama hâlâ genel amaçlı bir işletim sistemini hiç tasarlanmadığı bir soruna bantlıyorsunuz. Ajan orkestrasyonu Python kütüphanelerinde yaşıyor. Süreç izolasyonu sonradan düşünülmüş. Her ajan çalıştırması, aynı yönetimsiz thread havuzu için masaüstü ortamınızla rekabet ediyor.",
+    "para3": "Astra OS farklı bir soruyla başlıyor: ya işletim sistemi ajanların birincil iş yükü olduğunu bilseydi? Ajan süreçleri için çekirdek seviyesinde zamanlama öncelikleri. HTTP değil, IPC primitive'leri üzerinden birinci sınıf ajan iletişimi. Uygulama katmanında değil, zamanlayıcıda uygulanan kaynak kotaları. Bu bir framework değil — işletim sisteminin kendisi."
   },
   "FinalCTA": {
-    "headline": "",
-    "scarcity": "",
-    "ctaButton": ""
+    "headline": "Yapay zeka altyapısının geleceğini şekillendirmeye hazır mısınız?",
+    "scarcity": "Yerler hızlı dolduruluyor. Başvuruları şimdi inceliyoruz.",
+    "ctaButton": "Bekleme Listesine Katıl"
   },
   "Footer": {
-    "privacyLink": "",
-    "switchLanguage": "",
-    "switchLanguageLabel": "",
-    "switchLanguageLabelAlt": "",
-    "copyright": ""
+    "privacyLink": "Gizlilik Politikası",
+    "switchLanguage": "EN",
+    "switchLanguageLabel": "Türkçe'ye geç",
+    "switchLanguageLabelAlt": "İngilizce'ye geç",
+    "copyright": "© 2026 Astra OS. Tüm hakları saklıdır."
   }
 }
