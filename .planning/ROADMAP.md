@@ -48,7 +48,13 @@ Plans:
   3. "Why Astra OS?" section explains the incumbent gap with specific, technically credible language (not marketing superlatives)
   4. A second CTA section appears near the bottom with fresh scarcity copy distinct from the hero
   5. The page is visually complete and readable at 320px, 768px, and 1280px viewport widths with a consistent dark theme
-**Plans**: TBD
+**Plans**: 4 plans
+
+Plans:
+- [ ] 02-01-PLAN.md — Wave 0: Create static-page.spec.ts test stubs and dictionary non-empty assertions
+- [ ] 02-02-PLAN.md — Wave 1: Install lucide-react, populate EN+TR dictionaries, build Hero section, update Footer
+- [ ] 02-03-PLAN.md — Wave 2: FeaturesSection and WhyAstraSection components wired into page.tsx
+- [ ] 02-04-PLAN.md — Wave 3: FinalCTASection component, complete page.tsx, visual checkpoint (has human-verify)
 
 ### Phase 3: Conversion Flow
 **Goal**: A visitor can click "Join the Waitlist", complete LinkedIn OAuth, and be presented with the 4-question qualifying survey — the full conversion funnel works end-to-end with correct security, GDPR consent, and graceful error handling
@@ -81,6 +87,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 5/5 | Complete    | 2026-03-19 |
-| 2. Static Page | 0/TBD | Not started | - |
+| 2. Static Page | 0/4 | Not started | - |
 | 3. Conversion Flow | 0/TBD | Not started | - |
 | 4. Lead Storage & Launch | 0/TBD | Not started | - |
