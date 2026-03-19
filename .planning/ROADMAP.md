@@ -12,7 +12,7 @@ Four phases deliver a high-conversion waitlist landing page for Astra OS. Phase 
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Project scaffold, i18n routing, SEO metadata, and privacy page
+- [x] **Phase 1: Foundation** - Project scaffold, i18n routing, SEO metadata, and privacy page
 - [ ] **Phase 2: Static Page** - All content sections built, responsive dark-theme visual system complete
 - [ ] **Phase 3: Conversion Flow** - LinkedIn OAuth backend, qualifying survey UI, GDPR consent
 - [ ] **Phase 4: Lead Storage & Launch** - Waitlist Route Handler, Airtable/Supabase write, Lighthouse 90+
@@ -32,11 +32,11 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 5 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Wave 0: Install Playwright + Vitest, create test stubs for all Phase 1 requirements
-- [ ] 01-02-PLAN.md — Wave 1: Next.js 15 scaffold, Tailwind v4 PostCSS pipeline, next-intl install, dark theme globals
-- [ ] 01-03-PLAN.md — Wave 2: next-intl routing config, middleware, request config, dictionary schema, root layout with metadata
-- [ ] 01-04-PLAN.md — Wave 3: robots.ts, sitemap.ts, privacy page, LanguageSwitcher component wired into layout
-- [ ] 01-05-PLAN.md — Wave 4: Vercel project creation and environment variable configuration (checkpoint)
+- [x] 01-01-PLAN.md — Wave 0: Install Playwright + Vitest, create test stubs for all Phase 1 requirements
+- [x] 01-02-PLAN.md — Wave 1: Next.js 15 scaffold, Tailwind v4 PostCSS pipeline, next-intl install, dark theme globals
+- [x] 01-03-PLAN.md — Wave 2: next-intl routing config, middleware, request config, dictionary schema, root layout with metadata
+- [x] 01-04-PLAN.md — Wave 3: robots.ts, sitemap.ts, privacy page, LanguageSwitcher component wired into layout
+- [x] 01-05-PLAN.md — Wave 4: Vercel project creation and environment variable configuration (checkpoint)
 
 ### Phase 2: Static Page
 **Goal**: A fully styled, responsive landing page with all content sections rendered and bilingual copy in place — visitors can read the full value proposition, understand the features, and see the scarcity framing; the waitlist CTA button is visible but not yet wired to OAuth
@@ -80,7 +80,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 2/5 | In Progress|  |
+| 1. Foundation | 5/5 | Complete | 2026-03-19 |
 | 2. Static Page | 0/TBD | Not started | - |
 | 3. Conversion Flow | 0/TBD | Not started | - |
 | 4. Lead Storage & Launch | 0/TBD | Not started | - |

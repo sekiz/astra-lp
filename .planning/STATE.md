@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 01-foundation-02-PLAN.md
-last_updated: "2026-03-18T23:55:19.190Z"
-last_activity: 2026-03-19 — Plan 01-01 complete (Wave 0 test infrastructure)
+stopped_at: Completed 01-foundation-05-PLAN.md
+last_updated: "2026-03-19T00:13:31Z"
+last_activity: 2026-03-19 — Plan 01-05 complete (Vercel deployment configuration)
 progress:
   total_phases: 4
-  completed_phases: 0
+  completed_phases: 1
   total_plans: 5
-  completed_plans: 2
-  percent: 20
+  completed_plans: 5
+  percent: 100
 ---
 
 # Project State
@@ -25,32 +25,33 @@ See: .planning/PROJECT.md (updated 2026-03-19)
 
 ## Current Position
 
-Phase: 1 of 4 (Foundation)
-Plan: 1 of 5 in current phase
-Status: In progress
-Last activity: 2026-03-19 — Plan 01-01 complete (Wave 0 test infrastructure)
+Phase: 1 of 4 (Foundation) — COMPLETE
+Plan: 5 of 5 in current phase (all complete)
+Status: In progress — Phase 2 (Waitlist) next
+Last activity: 2026-03-19 — Plan 01-05 complete (Vercel deployment configuration)
 
-Progress: [██░░░░░░░░] 20%
+Progress: [██████████] 100% (Phase 1 complete)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: 3 min
-- Total execution time: 3 min
+- Total plans completed: 5
+- Average duration: ~10 min
+- Total execution time: ~50 min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-foundation | 1/5 | 3 min | 3 min |
+| 01-foundation | 5/5 | ~50 min | ~10 min |
 
 **Recent Trend:**
-- Last 5 plans: 3 min
+- Last 5 plans: ~10 min
 - Trend: -
 
 *Updated after each plan completion*
 | Phase 01-foundation P02 | 3 | 2 tasks | 10 files |
+| Phase 01-foundation P05 | 10 | 3 tasks | 1 file |
 
 ## Accumulated Context
 
@@ -66,6 +67,8 @@ Recent decisions affecting current work:
 - [Phase 01-foundation]: testMatch: '**/*.spec.ts' added to playwright.config.ts to prevent Playwright from loading vitest .test.ts files in the same directory
 - [Phase 01-foundation]: Next.js 16.2.0 used (create-next-app@latest) instead of 15.x — App Router architecture identical, no downstream impact
 - [Phase 01-foundation]: i18n/request.ts stub created to unblock build — Plan 03 replaces with full routing config
+- [Phase 01-foundation P05]: Production URL is https://astra-lp.vercel.app — use for Phase 3 OAuth callback configuration
+- [Phase 01-foundation P05]: NEXT_PUBLIC_BASE_URL set in Vercel for Production, Preview, and Development environments (SEO-03 satisfied)
 
 ### Pending Todos
 
@@ -78,6 +81,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-18T23:55:19.188Z
-Stopped at: Completed 01-foundation-02-PLAN.md
+Last session: 2026-03-19T00:13:31Z
+Stopped at: Completed 01-foundation-05-PLAN.md (Phase 1 complete — Phase 2 Waitlist next)
 Resume file: None
