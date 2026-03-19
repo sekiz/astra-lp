@@ -308,7 +308,7 @@ export function FlickeringFooter() {
           {/* Social links */}
           <div className="flex items-center gap-1 mt-1">
             <a
-              href="https://github.com/astra-os"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -317,7 +317,7 @@ export function FlickeringFooter() {
               <Github size={16} />
             </a>
             <a
-              href="https://x.com/astraos"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="X (Twitter)"
@@ -326,7 +326,7 @@ export function FlickeringFooter() {
               <Twitter size={16} />
             </a>
             <a
-              href="https://linkedin.com/company/astra-os"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
