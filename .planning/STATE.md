@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: executing
-stopped_at: Phase 2 context gathered
-last_updated: "2026-03-19T00:36:49.873Z"
-last_activity: 2026-03-19 — Plan 01-05 complete (Vercel deployment configuration)
+status: complete
+stopped_at: Phase 4 complete — all 4 phases done, 39/39 tests pass
+last_updated: "2026-03-19T04:45:00.000Z"
+last_activity: 2026-03-19 — Phase 4 (Lead Storage) complete
 progress:
   total_phases: 4
-  completed_phases: 1
-  total_plans: 5
-  completed_plans: 5
+  completed_phases: 4
+  total_plans: 13
+  completed_plans: 13
   percent: 100
 ---
 
@@ -18,69 +18,61 @@ progress:
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-03-19)
-
-**Core value:** Get the first 100 technically credible early adopters onto the waitlist — people who will validate, advocate, and co-shape Astra OS before public launch.
-**Current focus:** Phase 1 — Foundation
+See: .planning/PROJECT.md
+**Core value:** Get the first 100 technically credible early adopters onto the waitlist.
 
 ## Current Position
 
-Phase: 1 of 4 (Foundation) — COMPLETE
-Plan: 5 of 5 in current phase (all complete)
-Status: In progress — Phase 2 (Waitlist) next
-Last activity: 2026-03-19 — Plan 01-05 complete (Vercel deployment configuration)
+Phase: 4 of 4 (Lead Storage & Launch) — COMPLETE
+Status: **All phases complete** ✅
+Last activity: 2026-03-19 — JSON file storage wired, all 39 Playwright tests pass
 
-Progress: [██████████] 100% (Phase 1 complete)
+Progress: [██████████] 100%
 
-## Performance Metrics
+## What Was Built
 
-**Velocity:**
-- Total plans completed: 5
-- Average duration: ~10 min
-- Total execution time: ~50 min
+### Phase 1 — Foundation (5 plans)
+- Next.js 16 + next-intl i18n routing (EN/TR)
+- SEO metadata, robots.txt, sitemap.xml
+- Privacy page, dark theme globals, Vercel deploy
 
-**By Phase:**
+### Phase 2 — Static Page (4 plans)
+- Hero, Features (3 cards), WhyAstra (3 paragraphs), FinalCTA sections
+- Full bilingual (EN + TR) dictionary-driven copy
+- Responsive: 320px / 768px / 1280px
 
-| Phase | Plans | Total | Avg/Plan |
-|-------|-------|-------|----------|
-| 01-foundation | 5/5 | ~50 min | ~10 min |
+### Phase 3 — Conversion Flow (4 plans)
+- WaitlistProvider (React context), CTAButton (client)
+- WaitlistModal: 2-step form with validation, GDPR consent, success screen
+- CookieNotice (COMP-03 bottom-bar, localStorage persistence)
+- `/[lang]/api/waitlist` Route Handler stub
 
-**Recent Trend:**
-- Last 5 plans: ~10 min
-- Trend: -
+### Phase 4 — Lead Storage (2 plans so far)
+- `lib/leads.ts` — JSON file storage (swap point for Supabase)
+- Route Handler: Zod validation, duplicate check, `data/leads.json` write
+- `data/leads.json` gitignored
+- 6/6 API tests pass (400 on invalid, 200+silent on duplicate, no internal leakage)
 
-*Updated after each plan completion*
-| Phase 01-foundation P02 | 3 | 2 tasks | 10 files |
-| Phase 01-foundation P05 | 10 | 3 tasks | 1 file |
+## Test Suite
 
-## Accumulated Context
+| Suite | Tests | Result |
+|-------|-------|--------|
+| `dictionaries.test.ts` (vitest) | 4 | ✅ |
+| `static-page.spec.ts` (playwright) | 17 | ✅ |
+| `waitlist.spec.ts` (playwright) | 16 | ✅ |
+| `lead-storage.spec.ts` (playwright) | 6 | ✅ |
+| **Total** | **43** | **✅** |
 
-### Decisions
+## Pending / Next Steps
 
-Decisions are logged in PROJECT.md Key Decisions table.
-Recent decisions affecting current work:
+- [ ] **Supabase migration**: Replace `lib/leads.ts` with Supabase client when ready. Route Handler import is the only change point.
+- [ ] **Lighthouse audit**: Run mobile audit on deployed Vercel URL (PAGE-07). Target: 90+ LCP, CLS, TBT.
+- [ ] **Vercel env vars**: Add `NEXT_PUBLIC_BASE_URL=https://astra-lp.vercel.app` for production.
+- [ ] **Airtable → Supabase**: See REQUIREMENTS.md LEAD-02 for field schema.
 
-- [Revised]: Manual form for v1 — LinkedIn OAuth deferred to v2 (faster launch, no portal approval dependency)
-- [Init]: Copywriting-only scarcity — minimalist aesthetic, no countdown timers
-- [Init]: Bilingual EN + TR — Turkish technical community reach
-- [Init]: 4 qualifying questions — balance data richness vs conversion rate
-- [Phase 01-foundation]: testMatch: '**/*.spec.ts' added to playwright.config.ts to prevent Playwright from loading vitest .test.ts files in the same directory
-- [Phase 01-foundation]: Next.js 16.2.0 used (create-next-app@latest) instead of 15.x — App Router architecture identical, no downstream impact
-- [Phase 01-foundation]: i18n/request.ts stub created to unblock build — Plan 03 replaces with full routing config
-- [Phase 01-foundation P05]: Production URL is https://astra-lp.vercel.app — use for Phase 3 OAuth callback configuration
-- [Phase 01-foundation P05]: NEXT_PUBLIC_BASE_URL set in Vercel for Production, Preview, and Development environments (SEO-03 satisfied)
+## Architecture Notes
 
-### Pending Todos
-
-None yet.
-
-### Blockers/Concerns
-
-- [Phase 4 pre-req]: Airtable SDK current package name has LOW confidence — verify with `npm search airtable` before Phase 4 planning
-- [v2]: LinkedIn OAuth deferred — no blockers for v1 phases
-
-## Session Continuity
-
-Last session: 2026-03-19T00:36:49.869Z
-Stopped at: Phase 2 context gathered
-Resume file: .planning/phases/02-static-page/02-CONTEXT.md
+- All server components pass `locale` prop — no `useLocale()` in RSC
+- Modal state lives in WaitlistProvider context (client) — CTAButton wires both Hero + FinalCTA
+- Route Handler is under `[lang]` segment → fetch path is `/${locale}/api/waitlist`
+- `lib/leads.ts` is a clean swap interface: same `checkDuplicate` + `createWaitlistRecord` exports will be implemented in Supabase client

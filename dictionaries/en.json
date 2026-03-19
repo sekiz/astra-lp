@@ -1,12 +1,14 @@
 {
   "Metadata": {
-    "title": "Astra OS — AI Operating System | Join the Closed Beta",
-    "description": "Linux-based AI OS with kernel-level agent orchestration. First 100 developers shape the platform."
+    "title": "Astra OS — AI Operating System | Private Alpha",
+    "description": "Linux-based AI OS with kernel-level agent orchestration. Limited slots available for the Private Alpha."
   },
   "Nav": {
     "switchLanguage": "TR",
     "switchLanguageLabel": "Switch to Turkish",
-    "switchLanguageLabelAlt": "Switch to English"
+    "switchLanguageLabelAlt": "Switch to English",
+    "features": "Features",
+    "whyAstra": "Why Astra"
   },
   "Privacy": {
     "title": "Privacy Policy",
@@ -24,34 +26,117 @@
   "Hero": {
     "headline": "Your OS doesn't know what an AI agent is. Astra does.",
     "subheadline": "Astra OS is a Linux-based operating system with kernel-level AI agent orchestration — built for developers who are serious about what comes next.",
-    "scarcity": "Closed beta. Limited to the first 100.",
-    "ctaButton": "Get Early Access"
+    "scarcity": "Limited slots available for the Private Alpha.",
+    "ctaButton": "Get Early Access",
+    "secondaryCta": "See how it works"
   },
   "Features": {
     "sectionTitle": "Built differently, from the ground up.",
     "card1Title": "Linux Kernel Foundation",
     "card1Body": "Built on a hardened Linux kernel — not a wrapper, not a compatibility layer. The same proven foundation that runs the world's most critical infrastructure, now optimized for AI workloads.",
+    "card1Status": "Core",
+    "card1Meta": "v6.8",
     "card2Title": "Open Source, Always",
     "card2Body": "Every line of Astra OS that can be open will be. No black boxes, no lock-in. You can inspect the scheduler, audit the agent runtime, and fork whatever you need.",
+    "card2Status": "OSS",
+    "card2Meta": "Apache 2.0",
     "card3Title": "Kernel-Level Agent Orchestration",
-    "card3Body": "AI agent scheduling happens at the kernel, not in userspace middleware. Agents get real process isolation, direct hardware access, and first-class resource guarantees — not best-effort async glue."
+    "card3Body": "AI agent scheduling happens at the kernel, not in userspace middleware. Agents get real process isolation, direct hardware access, and first-class resource guarantees.",
+    "card3Status": "Alpha",
+    "card3Meta": "IPC-native",
+    "card4Title": "Persistent Memory Layer",
+    "card4Body": "Agents never start from zero. A high-speed persistent memory layer preserves context across sessions, processes, and reboots — at kernel speed, not application latency.",
+    "card4Status": "Active",
+    "card4Meta": "128k+ ctx",
+    "card5Title": "Real-Time Process Scheduling",
+    "card5Body": "A priority-aware scheduler gives AI agents the CPU time they need, when they need it. No competing with background services for an unmanaged thread pool.",
+    "card5Status": "Realtime",
+    "card5Meta": "<1.2ms",
+    "card6Title": "Generative App Runtime",
+    "card6Body": "A first-class runtime for generative applications that adapt, learn, and execute on-device. Build apps that reason — not just apps that run.",
+    "card6Status": "Coming",
+    "card6Meta": "Preview"
   },
   "WhyAstra": {
-    "sectionTitle": "Why not macOS or Ubuntu?",
-    "para1": "macOS is built for humans using applications. The kernel scheduler does not know what a language model is, and Apple's security model treats AI agents as just another process — one it can silently throttle, sandbox, or kill. The result: agents lose context, pipelines break, and you spend your afternoon diagnosing permission errors instead of shipping.",
-    "para2": "Ubuntu plus whatever AI framework is popular this month gets you further — but you are still duct-taping a general-purpose OS to a problem it was never designed for. Agent orchestration lives in Python libraries. Process isolation is an afterthought. Every agent run competes with your desktop environment for the same unmanaged thread pool.",
-    "para3": "Astra OS starts from a different question: what if the OS knew agents were the primary workload? Kernel-level scheduling priorities for agent processes. First-class inter-agent communication via IPC primitives, not HTTP. Resource quotas enforced at the scheduler, not the application layer. This is not a framework — it is the operating system itself."
+    "sectionTitle": "The OS is the Bottleneck.",
+    "para1": "General-purpose operating systems were built for humans clicking buttons — not for autonomous agents scaling logic. Their kernel schedulers have no concept of reasoning load, context windows, or inter-agent urgency. When your agent gets throttled, loses context mid-chain, or crashes under memory pressure, you are not fighting your code. You are fighting an OS designed for the pre-AI era.",
+    "para2": "Layering AI frameworks on top of a legacy OS gets you further — but the foundation stays broken. Agent orchestration ends up in Python libraries. Process isolation is bolted on. Every agent run competes with background services for an unmanaged thread pool the OS was never designed to share intelligently. The latency is not a bug in your prompt — it is architectural.",
+    "para3": "Astra OS starts from a different question: what if the OS knew agents were the primary workload? Kernel-level scheduling priorities for agent processes. First-class inter-agent communication via IPC primitives, not HTTP. Resource quotas enforced at the scheduler, not the application layer. Persistent memory that grows with your workflow — so agents never start from zero. This is not a framework — it is the operating system itself."
   },
   "FinalCTA": {
-    "headline": "Ready to shape the future of AI infrastructure?",
-    "scarcity": "Seats fill fast. We're reviewing applications now.",
-    "ctaButton": "Join the Waitlist"
+    "headline": "Stop fighting your OS. Let your agents thrive.",
+    "scarcity": "Join the Private Alpha. Only 100 early access slots remaining.",
+    "ctaButton": "Apply for Early Access"
   },
   "Footer": {
-    "privacyLink": "Privacy Policy",
-    "switchLanguage": "TR",
-    "switchLanguageLabel": "Switch to Turkish",
-    "switchLanguageLabelAlt": "Switch to English",
-    "copyright": "© 2026 Astra OS. All rights reserved."
+    "copyright": "\u00a9 2026 Astra OS. All rights reserved.",
+    "tagline": "Built for the agentic era.",
+    "description": "The AI Operating System for the next era of autonomous software.",
+    "closedBeta": "Private Alpha",
+    "comingSoon": "Soon",
+    "colProduct": "Product",
+    "colCompany": "Company",
+    "colLegal": "Legal",
+    "linkHome": "Home",
+    "linkFeatures": "Features",
+    "linkWhyAstra": "Why Astra",
+    "linkJoinWaitlist": "Join Waitlist",
+    "linkGetEarlyAccess": "Get Early Access",
+    "linkAbout": "About",
+    "linkBlog": "Blog",
+    "linkContact": "Contact",
+    "linkPrivacy": "Privacy Policy",
+    "linkTerms": "Terms of Service"
+  },
+  "Waitlist": {
+    "title": "Join the Waitlist",
+    "stepLabel": "Step {step} of {total}",
+    "step1Title": "Tell us about yourself",
+    "firstNameLabel": "First Name",
+    "firstNamePlaceholder": "Alan",
+    "lastNameLabel": "Last Name",
+    "lastNamePlaceholder": "Turing",
+    "emailLabel": "Email",
+    "emailPlaceholder": "alan@example.com",
+    "continueButton": "Continue →",
+    "backButton": "← Back",
+    "submitButton": "Request Access",
+    "step2Title": "A few quick questions",
+    "step2Subtitle": "Helps us match you with the right early access track.",
+    "q1Label": "What best describes you?",
+    "q1Option1": "Developer",
+    "q1Option2": "Founder",
+    "q1Option3": "AI Researcher",
+    "q1Option4": "Product Manager",
+    "q1Option5": "Other",
+    "q2Label": "Do you currently orchestrate AI agents?",
+    "q2Option1": "Yes",
+    "q2Option2": "No",
+    "q2Option3": "Exploring",
+    "q3Label": "Are you interested in AI for finance or trading?",
+    "q3Option1": "Yes",
+    "q3Option2": "No",
+    "q3Option3": "Maybe",
+    "q4Label": "What excites you most about Astra OS?",
+    "q4Option1": "Kernel-level AI integration",
+    "q4Option2": "Open Source freedom",
+    "q4Option3": "Agent Orchestration power",
+    "q4Option4": "Other",
+    "otherInputPlaceholder": "Tell us more…",
+    "consentLabel": "I agree to the processing of my personal data in accordance with the",
+    "consentPrivacyLink": "Privacy Policy",
+    "errorRequired": "This field is required.",
+    "errorEmail": "Please enter a valid email address.",
+    "errorConsent": "You must agree to the privacy policy to continue.",
+    "errorQuestions": "Please answer all questions before submitting.",
+    "submitError": "Something went wrong. Please try again.",
+    "successTitle": "You're on the list.",
+    "successBody": "We'll review your application and reach out within 7 days. First 100 get founding member access — we take that seriously.",
+    "successClose": "Close"
+  },
+  "CookieNotice": {
+    "text": "We use cookies for analytics and session management.",
+    "accept": "Accept",
+    "learnMore": "Learn more"
   }
 }

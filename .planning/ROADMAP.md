@@ -13,8 +13,8 @@ Four phases deliver a high-conversion waitlist landing page for Astra OS. Phase 
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Project scaffold, i18n routing, SEO metadata, and privacy page
-- [ ] **Phase 2: Static Page** - All content sections built, responsive dark-theme visual system complete
-- [ ] **Phase 3: Conversion Flow** - LinkedIn OAuth backend, qualifying survey UI, GDPR consent
+- [x] **Phase 2: Static Page** - All content sections built, responsive dark-theme visual system complete
+- [x] **Phase 3: Conversion Flow** - Manual waitlist form (2-step modal), qualifying survey, GDPR consent, cookie notice
 - [ ] **Phase 4: Lead Storage & Launch** - Waitlist Route Handler, Airtable/Supabase write, Lighthouse 90+
 
 ## Phase Details
@@ -51,10 +51,10 @@ Plans:
 **Plans**: 4 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Wave 0: Create static-page.spec.ts test stubs and dictionary non-empty assertions
-- [ ] 02-02-PLAN.md — Wave 1: Install lucide-react, populate EN+TR dictionaries, build Hero section, update Footer
-- [ ] 02-03-PLAN.md — Wave 2: FeaturesSection and WhyAstraSection components wired into page.tsx
-- [ ] 02-04-PLAN.md — Wave 3: FinalCTASection component, complete page.tsx, visual checkpoint (has human-verify)
+- [x] 02-01-PLAN.md — Wave 0: Create static-page.spec.ts test stubs and dictionary non-empty assertions
+- [x] 02-02-PLAN.md — Wave 1: Install lucide-react, populate EN+TR dictionaries, build Hero section, update Footer
+- [x] 02-03-PLAN.md — Wave 2: FeaturesSection and WhyAstraSection components wired into page.tsx
+- [x] 02-04-PLAN.md — Wave 3: FinalCTASection component, complete page.tsx, visual checkpoint (has human-verify)
 
 ### Phase 3: Conversion Flow
 **Goal**: A visitor can click "Join the Waitlist", complete LinkedIn OAuth, and be presented with the 4-question qualifying survey — the full conversion funnel works end-to-end with correct security, GDPR consent, and graceful error handling
@@ -66,7 +66,13 @@ Plans:
   3. The 4-question survey appears only after successful OAuth, shows a step progress indicator, and is completable in under 60 seconds
   4. Cancelling OAuth, encountering an expired code, or declining LinkedIn auth surfaces a friendly error and offers the fallback email form
   5. A cookie usage notice is visible on the page (minimal bottom-bar style, not a full-page takeover)
-**Plans**: TBD
+**Plans**: 4 plans
+
+Plans:
+- [x] 03-01-PLAN.md — Wave 0: Create waitlist.spec.ts test stubs (16 tests)
+- [x] 03-02-PLAN.md — Wave 1: Dictionary keys + WaitlistProvider + CTAButton + WaitlistModal (Step 1)
+- [x] 03-03-PLAN.md — Wave 2: WaitlistModal Step 2, qualifying questions, GDPR consent, Route Handler stub
+- [x] 03-04-PLAN.md — Wave 3: CookieNotice, layout wiring, visual checkpoint (has human-verify)
 
 ### Phase 4: Lead Storage & Launch
 **Goal**: Survey submissions are persisted to Airtable or Supabase via a secure server-side Route Handler, duplicate signups are handled gracefully, and the complete integrated page passes Lighthouse mobile 90+ — the product is launch-ready
@@ -87,6 +93,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 5/5 | Complete    | 2026-03-19 |
-| 2. Static Page | 0/4 | Not started | - |
-| 3. Conversion Flow | 0/TBD | Not started | - |
+| 2. Static Page | 4/4 | Complete    | 2026-03-19 |
+| 3. Conversion Flow | 4/4 | Complete    | 2026-03-19 |
 | 4. Lead Storage & Launch | 0/TBD | Not started | - |

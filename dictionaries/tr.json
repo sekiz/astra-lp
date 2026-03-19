@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Astra OS — Yapay Zeka İşletim Sistemi | Kapalı Beta'ya Katıl",
-    "description": "Çekirdek seviyesinde yapay zeka entegrasyonuna sahip Linux tabanlı işletim sistemi. İlk 100 geliştirici platformu şekillendiriyor."
+    "title": "Astra OS — Yapay Zeka İşletim Sistemi | Özel Alpha",
+    "description": "Çekirdek seviyesinde yapay zeka entegrasyonuna sahip Linux tabanlı işletim sistemi. Özel Alpha için sınırlı yer mevcut."
   },
   "Nav": {
     "switchLanguage": "EN",
@@ -24,34 +24,117 @@
   "Hero": {
     "headline": "İşletim sisteminiz yapay zeka ajanının ne olduğunu bilmiyor. Astra biliyor.",
     "subheadline": "Astra OS, çekirdek seviyesinde yapay zeka ajan orkestrasyonuna sahip Linux tabanlı bir işletim sistemi — yapay zekanın geleceğini ciddiye alan geliştiriciler için.",
-    "scarcity": "Kapalı beta. İlk 100 kullanıcıyla sınırlı.",
-    "ctaButton": "Erken Erişim Al"
+    "scarcity": "Özel Alpha için sınırlı yer mevcut.",
+    "ctaButton": "Erken Erişim Al",
+    "secondaryCta": "Nasıl çalışır?"
   },
   "Features": {
     "sectionTitle": "Temelden farklı inşa edildi.",
     "card1Title": "Linux Çekirdek Temeli",
     "card1Body": "Güçlendirilmiş bir Linux çekirdeği üzerine kurulu — katman değil, uyumluluk köprüsü değil. Dünyanın en kritik altyapısını çalıştıran kanıtlanmış temel, artık yapay zeka iş yükleri için optimize edildi.",
+    "card1Status": "Çekirdek",
+    "card1Meta": "v6.8",
     "card2Title": "Her Zaman Açık Kaynak",
     "card2Body": "Astra OS'un açılabilecek her satırı açık olacak. Kara kutu yok, bağımlılık yok. Zamanlayıcıyı inceleyebilir, ajan çalışma ortamını denetleyebilir ve ihtiyaç duyduğunuz her şeyi fork edebilirsiniz.",
+    "card2Status": "Açık",
+    "card2Meta": "Apache 2.0",
     "card3Title": "Çekirdek Seviyesinde Ajan Orkestrasyonu",
-    "card3Body": "Yapay zeka ajan zamanlaması, userspace ara katmanında değil çekirdekte gerçekleşir. Ajanlar gerçek süreç izolasyonu, doğrudan donanım erişimi ve birinci sınıf kaynak garantileri alır — belirsiz async bant bezi değil."
+    "card3Body": "Yapay zeka ajan zamanlaması userspace ara katmanında değil, çekirdekte gerçekleşir. Ajanlar gerçek süreç izolasyonu, doğrudan donanım erişimi ve birinci sınıf kaynak garantileri alır.",
+    "card3Status": "Alpha",
+    "card3Meta": "IPC-native",
+    "card4Title": "Kalıcı Bellek Katmanı",
+    "card4Body": "Ajanlar asla sıfırdan başlamaz. Yüksek hızlı kalıcı bellek katmanı, bağlamı oturumlar, süreçler ve yeniden başlatmalar boyunca korur — uygulama gecikmesinde değil, çekirdek hızında.",
+    "card4Status": "Aktif",
+    "card4Meta": "128k+ ctx",
+    "card5Title": "Gerçek Zamanlı Zamanlama",
+    "card5Body": "Yapay zeka ajanlarına ihtiyaç duydukları CPU süresini, tam doğru zamanda veren öncelik farkındalıklı zamanlayıcı. Arka plan servisleriyle rekabet etmek yok.",
+    "card5Status": "Realtime",
+    "card5Meta": "<1.2ms",
+    "card6Title": "Generatif Uygulama Runtime'ı",
+    "card6Body": "Uyarlayan, öğrenen ve cihaz üzerinde yürüten üretken uygulamalar için birinci sınıf runtime. Sadece çalışan değil, akıl yürüten uygulamalar geliştirin.",
+    "card6Status": "Yakında",
+    "card6Meta": "Preview"
   },
   "WhyAstra": {
-    "sectionTitle": "Neden macOS veya Ubuntu değil?",
-    "para1": "macOS, uygulama kullanan insanlar için tasarlandı. Çekirdek zamanlayıcısı bir dil modelinin ne olduğunu bilmiyor; Apple'ın güvenlik modeli yapay zeka ajanlarına sıradan bir süreç gibi davranıyor — sessizce kısıtlanabilir, sandbox'a alınabilir ya da sonlandırılabilir. Sonuç: ajanlar bağlamını kaybediyor, pipeline'lar bozuluyor, siz de öğleden sonranızı sevkiyat yapmak yerine izin hatalarını ayıklamakla geçiriyorsunuz.",
-    "para2": "Ubuntu artı popüler yapay zeka framework'ü sizi daha ileriye taşıyor — ama hâlâ genel amaçlı bir işletim sistemini hiç tasarlanmadığı bir soruna bantlıyorsunuz. Ajan orkestrasyonu Python kütüphanelerinde yaşıyor. Süreç izolasyonu sonradan düşünülmüş. Her ajan çalıştırması, aynı yönetimsiz thread havuzu için masaüstü ortamınızla rekabet ediyor.",
-    "para3": "Astra OS farklı bir soruyla başlıyor: ya işletim sistemi ajanların birincil iş yükü olduğunu bilseydi? Ajan süreçleri için çekirdek seviyesinde zamanlama öncelikleri. HTTP değil, IPC primitive'leri üzerinden birinci sınıf ajan iletişimi. Uygulama katmanında değil, zamanlayıcıda uygulanan kaynak kotaları. Bu bir framework değil — işletim sisteminin kendisi."
+    "sectionTitle": "Darboğaz, işletim sisteminin kendisi.",
+    "para1": "Genel amaçlı işletim sistemleri, düğmelere basan insanlar için tasarlandı — mantığı ölçeklendiren otonom ajanlar için değil. Çekirdek zamanlayıcılarının akıl yürütme yükü, bağlam pencereleri veya ajanlar arası aciliyet hakkında hiçbir kavramı yok. Ajanınız kısıtlandığında, zincirin ortasında bağlamını kaybettiğinde ya da bellek baskısı altında çöktüğünde — kodunuzla değil, yapay zeka öncesi döneme tasarlanmış bir işletim sistemiyle savaşıyorsunuz.",
+    "para2": "Eski bir işletim sisteminin üzerine yapay zeka framework'leri katmak sizi daha ileriye taşıyor — ama temel yapı bozuk kalmaya devam ediyor. Ajan orkestrasıyonu Python kütüphaneleri içinde yaşıyor. Süreç izolasyonu sonradan ekleniyor. Her ajan çalıştırması, arka plan servisleriyle OS'un hiçbir zaman akıllıca paylastırmak için tasarlanmadığı yönetimsiz bir thread havuzu için rekabet ediyor. Gecikme, prompt'unuzdaki bir hata değil — mimari bir sorun.",
+    "para3": "Astra OS farklı bir soruyla başlıyor: ya işletim sistemi ajanların birincil iş yükü olduğunu bilseydi? Ajan süreçleri için çekirdek seviyesinde zamanlama öncelikleri. HTTP değil, IPC primitive'leri üzerinden birinci sınıf ajan iletişimi. Uygulama katmanında değil, zamanlayıcıda uygulanan kaynak kotaları. İş akışınızla büyüyen kalıcı bellek — ajanlarınız asla sıfırdan başlamasın diye. Bu bir framework değil — işletim sisteminin kendisi."
   },
   "FinalCTA": {
-    "headline": "Yapay zeka altyapısının geleceğini şekillendirmeye hazır mısınız?",
-    "scarcity": "Yerler hızlı dolduruluyor. Başvuruları şimdi inceliyoruz.",
-    "ctaButton": "Bekleme Listesine Katıl"
+    "headline": "İşletim sisteminizle savaşmayı bırakın. Ajanlarınız kanatlansın.",
+    "scarcity": "Kapalı Alpha'ya katıl. 100 donanım yuvasından biri senin olabilir.",
+    "ctaButton": "Erken Erişim İçin Başvur"
   },
   "Footer": {
-    "privacyLink": "Gizlilik Politikası",
-    "switchLanguage": "EN",
-    "switchLanguageLabel": "Türkçe'ye geç",
-    "switchLanguageLabelAlt": "İngilizce'ye geç",
-    "copyright": "© 2026 Astra OS. Tüm hakları saklıdır."
+    "copyright": "\u00a9 2026 Astra OS. T\u00fcm haklar\u0131 sakl\u0131d\u0131r.",
+    "tagline": "Ajansal \u00e7a\u011f i\u00e7in in\u015fa edildi.",
+    "description": "Yeni nesil otonom yaz\u0131l\u0131m i\u00e7in Yapay Zeka \u0130\u015fletim Sistemi.",
+    "closedBeta": "Özel Alpha",
+    "comingSoon": "Yak\u0131nda",
+    "colProduct": "\u00dcr\u00fcn",
+    "colCompany": "Firma",
+    "colLegal": "Hukuki",
+    "linkHome": "Ana Sayfa",
+    "linkFeatures": "Özellikler",
+    "linkWhyAstra": "Neden Astra",
+    "linkJoinWaitlist": "Bekleme Listesi",
+    "linkGetEarlyAccess": "Erken Erişim Al",
+    "linkAbout": "Hakk\u0131m\u0131zda",
+    "linkBlog": "Blog",
+    "linkContact": "\u0130leti\u015fim",
+    "linkPrivacy": "Gizlilik Politikas\u0131",
+    "linkTerms": "Kullan\u0131m Ko\u015fullar\u0131"
+  },
+  "Waitlist": {
+    "title": "Bekleme Listesine Katıl",
+    "stepLabel": "{step} / {total}. Adım",
+    "step1Title": "Kendinizi tanıtın",
+    "firstNameLabel": "Ad",
+    "firstNamePlaceholder": "Alan",
+    "lastNameLabel": "Soyad",
+    "lastNamePlaceholder": "Turing",
+    "emailLabel": "E-posta",
+    "emailPlaceholder": "alan@ornek.com",
+    "continueButton": "Devam Et →",
+    "backButton": "← Geri",
+    "submitButton": "Erişim Talep Et",
+    "step2Title": "Birkaç hızlı soru",
+    "step2Subtitle": "Sizi doğru erken erişim grubuna yönlendirmemize yardımcı olur.",
+    "q1Label": "Sizi en iyi tanımlayan hangisi?",
+    "q1Option1": "Geliştirici",
+    "q1Option2": "Kurucu",
+    "q1Option3": "Yapay Zeka Araştırmacısı",
+    "q1Option4": "Ürün Yöneticisi",
+    "q1Option5": "Diğer",
+    "q2Label": "Şu anda yapay zeka ajanlarını orkestre ediyor musunuz?",
+    "q2Option1": "Evet",
+    "q2Option2": "Hayır",
+    "q2Option3": "Araştırıyorum",
+    "q3Label": "Finans veya ticaret için yapay zekaya ilgi duyuyor musunuz?",
+    "q3Option1": "Evet",
+    "q3Option2": "Hayır",
+    "q3Option3": "Belki",
+    "q4Label": "Astra OS'u en çok ne heyecanlandırıyor?",
+    "q4Option1": "Çekirdek seviyesinde yapay zeka entegrasyonu",
+    "q4Option2": "Açık Kaynak özgürlüğü",
+    "q4Option3": "Ajan Orkestrasyonu gücü",
+    "q4Option4": "Diğer",
+    "otherInputPlaceholder": "Belirtin…",
+    "consentLabel": "Kişisel verilerimin aşağıdaki koşullar çerçevesinde işlenmesini kabul ediyorum:",
+    "consentPrivacyLink": "Gizlilik Politikası",
+    "errorRequired": "Bu alan zorunludur.",
+    "errorEmail": "Geçerli bir e-posta adresi girin.",
+    "errorConsent": "Devam etmek için gizlilik politikasını kabul etmelisiniz.",
+    "errorQuestions": "Lütfen tüm soruları yanıtlayın.",
+    "submitError": "Bir hata oluştu. Lütfen tekrar deneyin.",
+    "successTitle": "Listedesiniz.",
+    "successBody": "Başvurunuzu inceleyecek ve 7 gün içinde size ulaşacağız. İlk 100 kişi kurucu üye erişimi alıyor — bunu ciddiye alıyoruz.",
+    "successClose": "Kapat"
+  },
+  "CookieNotice": {
+    "text": "Analitik ve oturum yönetimi için çerez kullanıyoruz.",
+    "accept": "Kabul Et",
+    "learnMore": "Daha fazla bilgi"
   }
 }
